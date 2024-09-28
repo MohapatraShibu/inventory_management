@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Inventory Management System</h1>
+    </header>
+
+    <main>
+        <section id="item-list">
+            <h2>Item List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="items-table">
+                    <!-- Dynamic rows will be added here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="add-item">
+            <h2>Add New Item</h2>
+            <form id="item-form">
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" name="item_name" required>
+                <label for="item-quantity">Quantity:</label>
+                <input type="number" id="item-quantity" name="quantity" required>
+                <label for="item-price">Price:</label>
+                <input type="number" id="item-price" name="price" required>
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Inventory Management System</p>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
